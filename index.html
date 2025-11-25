@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEJUARAAN KARATE ANTAR PELAJAR PANDAWA 2025</title>
+    
+    <title>KEJUARAAN DAERAH INKANAS KAPOLDA CUP VII SUMATERA UTARA 2025</title>
     <link rel="icon" type="image/png" href="logo pandawa.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
             color: #1f2937;
         }
         .header-bg {
-            /* Pastikan URL ini adalah URL langsung ke gambar (tautan 'raw' dari GitHub) */
+            /* Pastikan URL ini adalah URL langsung ke gambar */
             background-image: url('https://raw.githubusercontent.com/opik000027/pandawa/main/banner.png');
             background-size: cover;
             background-position: center;
-            position: relative; /* Penting untuk lapisan overlay */
+            position: relative;
         }
         .header-bg::before {
             content: '';
@@ -28,7 +29,7 @@
             width: 100%;
             height: 100%;
             /* Lapisan overlay transparan untuk membuat teks lebih jelas */
-            background-color: rgba(0, 0, 0, 0.5); 
+            background-color: rgba(0, 0, 0, 0.55); 
         }
         .header-content {
             position: relative;
@@ -41,9 +42,19 @@
             padding: 24px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        /* Penyesuaian responsif untuk teks di header */
+        .title-responsive {
+            font-size: 2.25rem; /* text-4xl di mobile */
+        }
+        @media (min-width: 640px) {
+            .title-responsive {
+                font-size: 3rem; /* sm:text-5xl */
+            }
+        }
+        @media (min-width: 768px) {
+            .title-responsive {
+                font-size: 3.75rem; /* md:text-6xl */
+            }
         }
         .action-button {
             display: inline-flex;
@@ -60,248 +71,192 @@
             background-color: #F59E0B;
             transform: translateY(-2px);
         }
-        .action-button svg {
-            margin-right: 8px;
-        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Header Section -->
     <header class="header-bg text-white py-24 text-center">
-        <div class="header-content">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
-                KEJUARAAN KARATE ANTAR PELAJAR PANDAWA
+        <div class="header-content px-4">
+            <h1 class="title-responsive font-extrabold tracking-tight drop-shadow-lg">
+                KEJUARAAN DAERAH INKANAS KAPOLDA CUP VII SUMATERA UTARA
             </h1>
-            <p class="mt-4 text-xl sm:text-2xl font-medium drop-shadow-lg">
-                TAHUN 2025
-            </p>
-            <p class="mt-2 text-lg drop-shadow-lg">
-                Minggu, 19 Oktober 2025 | Cimahi Mall, Kota Cimahi
-            </p>
+            <p class="text-xl sm:text-2xl mt-4 font-light">Jumat s.d Minggu, 12 s.d 14 Desember 2025 | GOR Serbaguna Dispora Sumut</p>
+            
+            <div class="mt-8">
+                <a href="#biaya" class="action-button">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    Daftar Sekarang
+                </a>
+            </div>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-12">
-        <!-- About Section -->
-        <section id="about" class="mb-12">
+
+        <section id="tentang" class="mb-12">
             <div class="card">
-                <h2 class="text-3xl font-bold text-center mb-6">Tentang Acara</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">KEJURDA INKANAS KAPOLDA CUP VII SUMATERA UTARA 2025</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2">Latar Belakang</h3>
-                        <p class="text-justify text-gray-600">
-                            Pemerintah telah mengeluarkan Undang-undang Nomor 3 tahun 2005 tentang sistem keolahragaan nasional. Dalam peraturan tersebut, disebutkan bahwa tujuan keolahragaan nasional adalah memelihara dan meningkatkan kesehatan dan kebugaran, prestasi, kualitas manusia, menanamkan nilai moral dan akhlak mulia, sportivitas, serta disiplin. Melalui pembinaan di sekolah, para siswa dapat mengembangkan bakat dan minat secara intensif dan terus menerus, sehingga mereka mampu meraih prestasi, bahkan menembus skala internasional.
-                        </p>
+                        <h3 class="text-xl font-semibold mb-3 border-l-4 border-yellow-400 pl-3">Maksud Kegiatan</h3>
+                        <ul class="space-y-2 list-disc list-inside text-gray-600 text-base">
+                            <li>Sebagai bagian program pembinaan karate khususnya di Pengda, Pengcab, Dojo di lingkungan Inkanas Sumatera Utara.</li>
+                            <li>Membangun Mental dan Karakter yang tangguh untuk Atlet.</li>
+                            <li>Kompetisi yang berkelanjutan sebagai ajang prestasi Atlet.</li>
+                        </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2">Tujuan</h3>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li>Meningkatkan pemahaman dan wawasan pengetahuan keolahragaan dan kesehatan jasmani peserta didik.</li>
-                            <li>Menumbuhkan sikap dan perilaku hidup sehat peserta didik melalui kecintaan terhadap aktivitas olahraga.</li>
-                            <li>Menumbuhkembangkan iklim kompetisi yang sehat di lingkungan peserta didik.</li>
-                            <li>Memacu peningkatan mutu pendidikan jasmani dan kesehatan pada jenjang pendidikan menengah.</li>
-                            <li>Meningkatkan rasa persaudaraan dan persatuan antar generasi muda Indonesia.</li>
-                            <li>Menjaring peserta didik yang berminat dalam bidang olahraga untuk diikutsertakan dalam kompetisi tingkat internasional.</li>
+                        <h3 class="text-xl font-semibold mb-3 border-l-4 border-yellow-400 pl-3">Tujuan Kegiatan</h3>
+                        <ul class="space-y-2 list-disc list-inside text-gray-600 text-base">
+                            <li>Sebagai ajang kompetisi para Atlet Karate.</li>
+                            <li>Sebagai ajang seleksi Atlet Inkanas Sumatera Utara dalam rangka persiapan Kejurnas Inkanas Piala Kapolri Cup X tahun 2026 di provinsi Kalimantan Timur.</li>
+                            <li>Menumbuhkan rasa percaya diri dalam menghadapi kompetisi yang bersifat internasional.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Timeline Section -->
         <section id="timeline" class="mb-12">
             <div class="card">
-                <h2 class="text-3xl font-bold text-center mb-6">Jadwal Penting</h2>
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Jadwal Penting</h2>
+                <div class="space-y-6 max-w-2xl mx-auto">
+                    
+                    <div class="flex items-start p-3 border-b border-gray-100">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-base">1</div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-semibold">Pendaftaran</h3>
-                            <p class="text-gray-600">10 September - 10 Oktober 2025</p>
-                            <!-- Updated to include 3 buttons -->
-                            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4">
-                                <!-- Download Proposal Button -->
-                                <a href="https://drive.google.com/uc?export=download&id=1bB0p7jKuQ658Ar244-ZLn5p7CTRg97rE" download class="action-button bg-yellow-400 text-gray-800 hover:bg-yellow-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                    Download Proposal
-                                </a>
-                                <!-- Download Form Button -->
-                                <a href="https://drive.google.com/uc?export=download&id=1HdOpJULALGt5516mWgg8oUlVniwdCMpW" download class="action-button bg-yellow-400 text-gray-800 hover:bg-yellow-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                    Download Form
-                                </a>
-                                <!-- Join Group Button -->
-                                <!-- Perhatian: Tautan grup WhatsApp harus diberikan oleh pengguna. Ini hanyalah tautan placeholder. -->
-                                <a href="https://chat.whatsapp.com/EfezwJ1RIrXHlYU6HOgoEU" target="_blank" class="action-button bg-yellow-400 text-gray-800 hover:bg-yellow-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                    </svg>
-                                    Gabung Grup
-                                </a>
-                            </div>
+                            <h3 class="text-lg font-semibold">Pendaftaran Online</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">21 November s/d 08 Desember 2025</p>
+                            <p class="text-gray-500 text-xs sm:text-sm">Dilakukan secara online (Link pendaftaran akan segera diumumkan).</p>
                         </div>
                     </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+
+                    <div class="flex items-start p-3 border-b border-gray-100">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-base">2</div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-semibold">Verifikasi Data</h3>
-                            <p class="text-gray-600">13 Oktober 2025</p>
-                            <p class="text-gray-600">Dilakukan secara online.</p>
+                            <h3 class="text-lg font-semibold">Verifikasi Data Peserta</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Rabu - Kamis, 10-11 Desember 2025</p>
+                            <p class="text-gray-500 text-xs sm:text-sm">Waktu: 10.00 WIB s/d 15.00 WIB. Lokasi: Focal Point Medan.</p>
                         </div>
                     </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+                    
+                    <div class="flex items-start p-3 border-b border-gray-100">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-base">3</div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-semibold">Technical Meeting</h3>
-                            <p class="text-gray-600">Jumat, 17 Oktober 2025 | 16.00 WIB - Selesai</p>
-                            <p class="text-gray-600">Dilakukan secara online.</p>
+                            <h3 class="text-lg font-semibold">Technical Meeting (TM)</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Kamis, 11 Desember 2025</p>
+                            <p class="text-gray-500 text-xs sm:text-sm">Waktu: 15.00 WIB s/d Selesai. Lokasi: Focal Point Medan.</p>
                         </div>
                     </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+
+                    <div class="flex items-start p-3">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-base">4</div>
                         <div class="ml-4">
                             <h3 class="text-lg font-semibold">Hari Pertandingan</h3>
-                            <p class="text-gray-600">Minggu, 19 Oktober 2025</p>
-                            <p class="text-gray-600">Lokasi: Cimahi Mall, Kota Cimahi.</p>
+                            <p class="text-gray-600 text-sm sm:text-base">Jumat s.d Minggu, 12 s.d 14 Desember 2025</p>
+                            <p class="text-gray-500 text-xs sm:text-sm">Waktu: 08.00 WIB s.d Selesai. Lokasi: GOR Serbaguna Dispora Sumut Pancing.</p>
                         </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="kategori" class="mb-12">
+            <div class="card">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Kategori Pertandingan</h2>
+
+                <div class="text-center text-gray-600 mb-6">
+                    <p class="mb-4 text-base sm:text-lg">Kejuaraan ini diselenggarakan untuk Atlet Karate perguruan **INKANAS se-Sumatera Utara**.</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-semibold mb-4 text-center border-b pb-2">Kelas Utama (Prestasi dan Festival)</h3>
+                    <p class="text-center text-sm text-gray-600 mb-4">Kelas Pertandingan mengacu pada Peraturan Pertandingan WKF. Detail lengkap mengenai kelas Kumite dan Kata dapat dilihat pada proposal resmi.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow border-l-4 border-red-500">
+                            <h4 class="text-lg font-semibold text-red-700">Kategori Prestasi (Open)</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1">
+                                <li>Usia Dini (8-9 Tahun)</li>
+                                <li>Pra Pemula (10-11 Tahun)</li>
+                                <li>Pemula (12-13 Tahun)</li>
+                                <li>Kadet (14-15 Tahun)</li>
+                                <li>Junior (16-17 Tahun)</li>
+                                <li>Senior (18-23 Tahun)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                            <h4 class="text-lg font-semibold text-blue-700">Kategori Festival</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1">
+                                <li>Pra Usia Dini (6-7 Tahun)</li>
+                                <li>Usia Dini (8-9 Tahun)</li>
+                                <li>Pra Pemula (10-11 Tahun)</li>
+                                <li>Pemula (12-13 Tahun)</li>
+                                <li>Kadet (14-15 Tahun)</li>
+                                <li>Junior (16-17 Tahun)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 text-center text-sm text-gray-500">
+                        <p>Tersedia juga Kelas Khusus TNI (18+ Tahun) dan POLRI (18+ Tahun).</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Categories Section -->
-        <section id="details" class="mb-12">
+        <section id="biaya" class="mb-12">
             <div class="card">
-                <h2 class="text-3xl font-bold text-center mb-6">Kelas Pertandingan</h2>
-                <!-- Tabs for Open/Festival -->
-                <div class="flex justify-center mb-6">
-                    <button class="tab-button bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded-full mx-2 transition-colors duration-200" data-tab="open">Kategori Open</button>
-                    <button class="tab-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full mx-2 transition-colors duration-200" data-tab="festival">Kategori Festival</button>
-                </div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Biaya Pendaftaran</h2>
 
-                <!-- Open Content -->
-                <div id="tab-open" class="tab-content">
-                    <h3 class="text-2xl font-semibold mb-4">Kategori Open</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Usia Dini -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">Usia Dini (8-9 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                                <li>KATA Beregu (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- Pra Pemula -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">Pra Pemula (10-11 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                                <li>KATA Beregu (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- Pemula -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">Pemula (12-13 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                                <li>KATA Beregu (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- Kadet -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">Kadet (14-15 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                                <li>KATA Beregu (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- Junior -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">Junior (16-17 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                                <li>KATA Beregu (Putra/Putri)</li>
-                            </ul>
-                        </div>
+                <div class="max-w-xl mx-auto space-y-6">
+                    <div class="bg-yellow-50 p-5 sm:p-6 rounded-lg border-l-4 border-yellow-500">
+                        <h3 class="text-xl font-semibold mb-3">Rincian Biaya per Kelas</h3>
+                        <ul class="space-y-2 text-gray-700 text-base">
+                            <li>Biaya Kontingen: **Rp. 150.000,-**</li>
+                            <li>Kategori Beregu: **Rp. 250.000,-**</li>
+                            <li>Kategori Prestasi (Perorangan): **Rp. 225.000,-**</li>
+                            <li>Kategori Festival: **Rp. 250.000,-**</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 p-5 sm:p-6 rounded-lg border-l-4 border-green-500">
+                        <h3 class="text-xl font-semibold mb-3">Rekening Pembayaran</h3>
+                        <p class="text-gray-700 text-base">Pembayaran uang pendaftaran via transfer ke rekening:</p>
+                        <p class="text-2xl font-bold text-green-700 mt-2">Bank Mandiri</p>
+                        <p class="text-xl font-bold text-green-700">1050016803458</p>
+                        <p class="text-sm text-gray-600">a/n Tri Nova Elfiani</p>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-5 sm:p-6 rounded-lg border-l-4 border-blue-500">
+                        <h3 class="text-xl font-semibold mb-3">Informasi dan Kontak</h3>
+                        <p class="text-gray-700 text-base">Untuk pendaftaran dan informasi lebih lanjut, silakan hubungi:</p>
+                        <p class="text-xl font-bold text-blue-700 mt-2">Chichi</p>
+                        <p class="text-xl font-bold text-blue-700">0852 6046 6889</p>
+                    </div>
+
+                    <div class="text-center text-sm text-gray-600 pt-4">
+                        <p>**Penting:** Batas akhir pendaftaran online adalah **08 Desember 2025**.</p>
+                        <p>Wajib melampirkan fotokopi Akte lahir/Ijazah/KTP/KK/KTA INKANAS dan Surat Keterangan Sehat dari dokter.</p>
                     </div>
                 </div>
-
-                <!-- Festival Content (Hidden by default) -->
-                <div id="tab-festival" class="tab-content hidden">
-                    <h3 class="text-2xl font-semibold mb-4">Kategori Festival</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- SD Kelas 1-3 -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">SD Kelas 1-3 (8-9 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- SD Kelas 4-6 -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">SD Kelas 4-6 (10-11 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- SMP Kelas 7-9 -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">SMP Kelas 7-9 (12-13 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                        <!-- SMA Kelas 10-12 -->
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                            <h4 class="text-lg font-semibold">SMA Kelas 10-12 (14-15 Tahun)</h4>
-                            <ul class="mt-4 list-disc list-inside text-gray-600">
-                                <li>KATA Perorangan (Putra/Putri)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Fees and Awards Section -->
-        <section id="fees-awards" class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <!-- Fees -->
-            <div class="card">
-                <h2 class="text-3xl font-bold text-center mb-6">Biaya Pendaftaran</h2>
-                <ul class="space-y-4 list-disc list-inside text-gray-600">
-                    <li>Perorangan: **Rp. 275.000**</li>
-                    <li>Beregu: **Rp. 325.000**</li>
-                    <li>Kontingen: **Rp. 150.000**</li>
-                </ul>
-            </div>
-            <!-- Awards -->
-            <div class="card">
-                <h2 class="text-3xl font-bold text-center mb-6">Hadiah & Penghargaan</h2>
-                <ul class="space-y-4 list-disc list-inside text-gray-600">
-                    <li>**Juara 1, 2 dan 3 bersama:** Medali dan Sertifikat Prestasi.</li>
-                    <li>**Juara 1 di setiap kelas:** Uang tunai Rp. 300.000 (jika minimal ada 4 peserta).</li>
-                </ul>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-gray-800 text-white text-center py-6">
-        <p>&copy; 2025 KEJUARAAN KARATE ANTAR PELAJAR PANDAWA. Semua Hak Cipta Dilindungi.</p>
+    <footer class="bg-gray-800 text-white text-center py-6 px-4">
+        <p class="text-sm sm:text-base">&copy; 2025 KEJUARAAN DAERAH INKANAS KAPOLDA CUP VII SUMATERA UTARA. Semua Hak Cipta Dilindungi.</p>
     </footer>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
 
-            // Tab functionality for Open/Festival
+            // Tab functionality for Open/Festival (kept for potential future use, though the current content is simplified)
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const tab = button.getAttribute('data-tab');
